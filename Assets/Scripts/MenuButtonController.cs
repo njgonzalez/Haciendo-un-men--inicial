@@ -16,6 +16,10 @@ public class MenuButtonController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
+    void Awake() {
+        
+    }
+
     // Update is called once per frame
     void Update(){
         if (Input.GetAxis("Vertical") != 0){
