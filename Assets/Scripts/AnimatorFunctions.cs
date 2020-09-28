@@ -11,6 +11,7 @@ public class AnimatorFunctions : MonoBehaviour
     void PlaySound(AudioClip whichSound){
         if (!disableOnce){
             menuButtonController.audioSource.PlayOneShot(whichSound);
+            Debug.Log("reproduce sonido");
         }else{
             disableOnce = false;
         }
